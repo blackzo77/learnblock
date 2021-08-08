@@ -4,17 +4,18 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"runtime"
 
 	"github.com/blackzo77/learnblock/explorer"
 	"github.com/blackzo77/learnblock/rest"
 )
 
 func usage() {
-	fmt.Printf("Welcome to 노마드 코인\n\n")
+	fmt.Printf("Welcome to Lim 블록체인\n\n")
 	fmt.Printf("Please use the following flags:\n\n")
 	fmt.Printf("-port:		Set the PORT of the server\n")
 	fmt.Printf("-mode:		Choose between 'html' and 'rest'\n\n")
-	os.Exit(0)
+	runtime.Goexit()
 }
 
 func Start() {
